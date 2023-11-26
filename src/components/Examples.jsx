@@ -1,12 +1,13 @@
 import React from 'react'
-import {AiFillAppstore, AiFillRocket} from 'react-icons/ai'
-import {BsPersonVcardFill} from 'react-icons/bs'
-import {FaLaptop} from 'react-icons/fa'
+
 import Fade from 'react-reveal/Fade'
+import { Card } from 'flowbite-react';
+import Image from '../assets/portal.webp'
+
 
 const Examples = () => {
   return (
-    <div className='bg-white w-full h-full min-h-[575px]'>
+    <div className='bg-[#E0F4FF] w-full h-full min-h-[600px]'>
         <Fade left duration={1000} distance='50%'>
         <div className='flex justify-center items-center py-4 m-4 text-4xl sm:text-5xl md:text-6xl text-center font-bold text-[#000000]'>
             <h1>Co możemy dla ciebie zrobić?</h1>
@@ -14,32 +15,79 @@ const Examples = () => {
         </Fade>
         <div className='grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
             <Fade left duration={1500} distance='50%'>
-            <div className='hover:shadow-2xl hover:shadow-black cursor-pointer bg-black ml-10 shadow-inner shadow-[#00df9a] w-4/5 m-4 px-8 py-8 rounded-lg hover:transition-all hover:ease-in-out hover:duration-200'>
-                <FaLaptop size={200} className='text-[#00df9a] ml-10 sm:ml-0'/>
-                <span className='text-4xl font-bold m-5 text-white '>Strony</span>
-                <p className='text-4xl font-bold m-5 mt-0 text-white'>internetowe</p>
-            </div>
+            <Card
+                imgSrc={Image}
+                imgAlt="Strony internetowe"
+               
+                className='m-2 bg-white h-[450px] shadow-2xl hover:scale-105 ease-in duration-150 p-1'
+                >
+                <h5 className="ml-2 text-2xl font-bold tracking-tight text-black">
+                    <p>
+                    Strony internetowe
+                    </p>
+                </h5>
+                <p className="font-normal text-gray-700 m-2">
+                    <p>
+                    Nowoczesna i responsywna strona internetowa, która pomoże Ci dotrzec do nowych klientów.
+                    </p>
+                </p>
+            </Card>
             </Fade>
             <Fade left duration={1500} distance='50%'>
-            <div className='hover:shadow-2xl hover:shadow-black bg-black ml-10 shadow-inner shadow-[#00df9a] w-4/5 m-4 px-8 py-8 rounded-lg hover:transition-all hover:ease-in-out hover:duration-200'>
-                <AiFillRocket size={200} className='text-[#00df9a] ml-10 sm:ml-0'/>
-                <span className='text-4xl font-bold m-5 text-white '>Landing</span>
-                <p className='text-4xl font-bold m-5 mt-0 text-white '>page</p>
-            </div>
+            <Card
+                imgSrc={Image}
+                imgAlt="Landing page"
+                
+                className='m-2 bg-white shadow-2xl h-[450px] hover:scale-105 ease-in duration-150 p-1'
+                >
+                <h5 className="ml-2 text-2xl font-bold tracking-tight text-black  ">
+                    <p>
+                    Landing page
+                    </p>
+                </h5>
+                <p className="font-normal text-gray-700 m-2">
+                    <p>
+                    To prosta strona, która ma pomóc Ci osiągnąć konkretny cel: sprzedać dany produkt czy usługę, zachęcić do kontaktu, a także pomóc w obranej strategii marketingowej.
+                    </p>
+                </p>
+            </Card>
             </Fade>
             <Fade left duration={1500} distance='50%'>
-            <div className='hover:shadow-2xl hover:shadow-black bg-black ml-10 shadow-inner shadow-[#00df9a] w-4/5 m-4 px-8 py-8 rounded-lg hover:transition-all hover:ease-in-out hover:duration-200'>
-                <BsPersonVcardFill size={200} className='text-[#00df9a] ml-10 sm:ml-0'/>
-                <span className='text-4xl font-bold m-5 text-white '>Portale</span>
-                <p className='text-4xl font-bold m-5 mt-0 text-white '>internetowe</p>
-            </div>
+            <Card
+                imgSrc={Image}
+                imgAlt="Portale Internetowe"
+                
+                className='m-2 bg-white h-[450px] shadow-2xl hover:scale-105 ease-in duration-150 p-1 '
+                >
+                <h5 className="ml-2 text-2xl font-bold tracking-tight text-black ">
+                    <p>
+                    Portale internetowe
+                    </p>
+                </h5>
+                <p className="font-normal text-gray-700 m-2">
+                    <p>
+                    Portal internetowy to znacznie bardziej rozbudowana strona internetowa z większą ilością funkcji. Wykonujemy różnego rodzaju portale (od informacyjnych i tematycznych po ogłoszeniowe i aukcyjne)
+                    </p>
+                </p>
+            </Card>
             </Fade>
             <Fade left duration={1500} distance='50%'>
-            <div className='hover:shadow-2xl hover:shadow-black bg-black ml-10 shadow-inner shadow-[#00df9a] w-4/5 m-4 px-8 py-8 rounded-lg hover:transition-all hover:ease-in-out hover:duration-200'>
-                <AiFillAppstore size={200} className='text-[#00df9a] ml-10 sm:ml-0'/>
-                <span className='text-4xl font-bold m-5 text-white '>Aplikacje</span>
-                <p className='text-4xl font-bold m-5 mt-0 text-white '>internetowe</p>
-            </div>
+            <Card
+                imgSrc={Image}
+                imgAlt="Aplikacje internetowe"
+                className='m-2 bg-white h-[450px] shadow-2xl hover:scale-105 ease-in duration-150 p-1'
+                >
+                <h5 className="ml-2 text-2xl font-bold tracking-tight text-black ">
+                    <p>
+                    Aplikacje internetowe
+                    </p>
+                </h5>
+                <p className="font-normal text-gray-700 m-2">
+                    <p>
+                        Aplikacja internetowa to aplikacja uruchamiana w przeglądarce, która przez dostarczony interfejs ma dostarczać użytkownikowi jakąś konkretną usługę. Na przykład (aplikacje bookingowe, konkursowe) czy też systemy ERP
+                    </p>
+                </p>
+            </Card>
             </Fade>
         </div>
     </div>

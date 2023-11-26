@@ -3,20 +3,20 @@
 @tailwind utilities;
 
 body {
-  background-color: #000300;
+  background-color: #FFFFFF;
 }
 li {
   cursor: pointer;
 }
 
 .navBarHoverLarge{
-  @apply hover:text-black hover:bg-white transition-all  hover:ease-in-out hover:duration-300
+  @apply  hover:bg-[#87C4FF] transition-all  hover:ease-in-out hover:duration-300
 }
 .navBarHoverOffer{
-  @apply hover:bg-[#00df9a] transition-all hover:scale-105  hover:ease-in-out hover:duration-300
+  @apply transition-all hover:text-lg
 }
 .navBarHoverSmall {
-  @apply hover:text-black hover:bg-white transition-all  hover:ease-in-out hover:duration-300
+  @apply hover:bg-[#87C4FF] transition-all  hover:ease-in-out hover:duration-300
 }
 .checkOfferButtonHover {
   @apply transition-all duration-150 ease-in hover:scale-105 hover:font-medium
