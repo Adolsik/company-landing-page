@@ -1,61 +1,60 @@
 import React from 'react';
 import {
-  FaDribbbleSquare,
   FaFacebookSquare,
-  FaGithubSquare,
   FaInstagram,
-  FaTwitterSquare,
 } from 'react-icons/fa';
+import { BsFillTelephoneFill, BsEnvelopeFill, BsClock } from "react-icons/bs";
+import Logo from '../assets/icon.ico'
 
 const Footer = () => {
   return (
-    <div className='max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-600'>
+    <div className='max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-20 text-gray-600'>
       <div>
-        <h1 className='w-full text-3xl font-bold text-[#39A7FF]'>ADEX</h1>
-        <p className='py-4'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id odit ullam iste repellat consequatur libero reiciendis, blanditiis accusantium.</p>
-        <div className='flex justify-between md:w-[75%] my-6'>
-            <FaFacebookSquare size={30} />
-            <FaInstagram size={30} />
-            <FaTwitterSquare size={30} />
-            <FaGithubSquare size={30} />
-            <FaDribbbleSquare size={30} />
+        <div className='flex items-center justify-between hover:scale-105 duration-300 ease-in-out cursor-pointer'>
+          <img src={Logo} alt="logo webadex" className='w-[10%] mr-2' />
+          <h1 className='w-full text-3xl font-bold text-[#39A7FF]'>WEBADEX</h1>
+        </div>
+        <p className='py-4 text-left'>Tworzymy nowoczesne strony internetowe – terenem naszego
+        działania jest głównie województwo małopolskie. Niezależnie od lokalizacji, nasz cel jest
+        jeden: dostarczenie Klientowi narzędzia do prowadzenia biznesu
+        najwyższej jakości.
+        </p>
+        <div className='flex md:w-[75%]'>
+            <a href="fb-todo"> <FaFacebookSquare size={30} className='mr-2 hover:scale-110 hover:text-[#4267B2] duration-300 ease-in-out'/></a>
+            <a href="inst-todo"><FaInstagram size={30} className='hover:scale-110 duration-300 ease-in-out' /> </a>
         </div>
       </div>
-      <div className='lg:col-span-2 flex justify-between mt-6'>
+      <div className='lg:col-span-1 flex justify-between mt-6'>
     <div>
-        <h6 className='font-medium text-gray-400'>Solutions</h6>
+        <h6 className='font-medium text-gray-400'>Menu</h6>
         <ul>
-            <li className='py-2 text-sm'>Analytics</li>
-            <li className='py-2 text-sm'>Marketing</li>
-            <li className='py-2 text-sm'>Commerce</li>
-            <li className='py-2 text-sm'>Insights</li>
+            <a href="todo"><li className='py-2 text-md hover:scale-110 duration-150 ease-in-out'>Strona główna</li></a>
+            <a href="todo"><li className='py-2 text-md hover:scale-110 duration-150 ease-in-out'>O nas</li></a>
+            <a href="todo"><li className='py-2 text-md hover:scale-110 duration-150 ease-in-out'>FAQ</li></a>
+            <a href="todo"><li className='py-2 text-md hover:scale-110 duration-150 ease-in-out'>Kontakt</li></a>
         </ul>
     </div>
     <div>
-        <h6 className='font-medium text-gray-400'>Support</h6>
+        <h6 className='font-medium text-md text-gray-400'>Kontakt</h6>
         <ul>
-            <li className='py-2 text-sm'>Pricing</li>
-            <li className='py-2 text-sm'>Documentation</li>
-            <li className='py-2 text-sm'>Guides</li>
-            <li className='py-2 text-sm'>API Status</li>
-        </ul>
-    </div>
-    <div>
-        <h6 className='font-medium text-gray-400'>Company</h6>
-        <ul>
-            <li className='py-2 text-sm'>About</li>
-            <li className='py-2 text-sm'>Blog</li>
-            <li className='py-2 text-sm'>Jobs</li>
-            <li className='py-2 text-sm'>Press</li>
-            <li className='py-2 text-sm'>Careers</li>
-        </ul>
-    </div>
-    <div>
-        <h6 className='font-medium text-gray-400'>Legal</h6>
-        <ul>
-            <li className='py-2 text-sm'>Claim</li>
-            <li className='py-2 text-sm'>Policy</li>
-            <li className='py-2 text-sm'>Terms</li>
+            <div className='flex items-center justify-start py-2'>
+              <div className=''>
+                <BsFillTelephoneFill className='text-lg mr-2 text-gray-400'/>
+              </div>
+              <p className='text-md font-medium'>(+48) 123 456 789</p>
+            </div>
+            <div className='flex items-center justify-start py-2'>
+              <div className=''>
+                <BsEnvelopeFill className='text-lg mr-2 text-gray-400'/>
+              </div>
+              <p className='text-md font-medium'>kontakt@webadex.pl</p>
+            </div>
+            <div className='flex items-center justify-start py-2'>
+              <div className=''>
+                <BsClock className='text-lg mr-2 text-gray-400'/>
+              </div>
+              <p className='text-md font-medium'>Pon - Pt 8:00-16:00</p>
+            </div>
         </ul>
     </div>
       </div>

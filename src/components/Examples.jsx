@@ -1,95 +1,60 @@
 import React from 'react'
-
 import Fade from 'react-reveal/Fade'
-import { Card } from 'flowbite-react';
-import Image from '../assets/portal.webp'
+import bgImage from '../assets/backgroundExamples.svg'
+import { FcApproval} from "react-icons/fc";
+import { BsFillTelephoneFill, BsEnvelopeFill } from "react-icons/bs";
 
 
 const Examples = () => {
   return (
-    <div className='bg-[#E0F4FF] w-full h-full min-h-[600px]'>
+    <div className='w-full flex flex-col justify-start h-[650px] lg:h-[550px] xl:h-[500px] z-50 text-white font-link'>
         <Fade left duration={1000} distance='50%'>
-        <div className='flex justify-center items-center py-4 m-4 text-4xl sm:text-5xl md:text-6xl text-center font-bold text-[#000000]'>
-            <h1>Co możemy dla ciebie zrobić?</h1>
-        </div>
+            {/* Examples */}
+            <img src={bgImage} alt="background" className='w-[100%] h-[75%] lg:h-[70%] xl:h-[60%] object-cover absolute' />
+            <div className='xl:ml-[10%]'>
+            <div>
+              <h1 className='text-6xl m-4 mb-0 ml-12 p-4 pb-2'>Co możemy dla ciebie zrobić?</h1>
+            </div>
+            <div className='xl:grid grid-cols-2 gap-0 xl:w-[50%] xl:mt-6'>
+              <div className='flex ml-12 p-4'>
+                <FcApproval className='text-4xl'/>
+                <p className='ml-1 text-3xl '>Strony internetowe</p>
+              </div>
+              <div className='flex ml-12 xl:ml-0 p-4'>
+                <FcApproval className='text-4xl'/>
+                <p className='ml-1 xl:ml text-3xl '>Portale internetowe</p>
+              </div>
+              <div className='flex ml-12 p-4'>
+                <FcApproval className='text-4xl'/>
+                <p className='ml-1 text-3xl '>Aplikacje internetowe</p>
+              </div>
+              <div className='flex ml-12 xl:ml-0 p-4'>
+                <FcApproval className='text-4xl'/>
+                <p className='ml-1 text-3xl '>Landing Page</p>
+              </div>
+            </div>
+            {/* Contact */}
+            <div className='ml-16 xl:ml-[15%]  xl:mt-[2%]' >
+              <div className='w-[250px] bg-[#9470f5] rounded-xl '>
+                <h1 className='text-2xl p-2 m-2'>Skontaktuj się z nami</h1>
+              </div>
+              <div className=''>
+                <div className='flex ml-3 p-1'>
+                  <div className='bg-white rounded-full'>
+                    <BsFillTelephoneFill className='text-lg m-2  text-[#9470f5]'/>
+                  </div>
+                  <p className='text-xl ml-5 font-medium'>(+48) 123 456 789</p>
+                </div>
+                <div className='flex ml-3 p-1'>
+                  <div className='bg-white rounded-full'>
+                    <BsEnvelopeFill className='text-lg m-2   text-[#9470f5]'/>
+                  </div>
+                  <p className='text-lg ml-5 font-medium'>kontakt@webadex.pl</p>
+                </div>
+              </div>
+            </div>
+            </div>
         </Fade>
-        <div className='grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
-            <Fade left duration={1500} distance='50%'>
-            <Card
-                imgSrc={Image}
-                imgAlt="Strony internetowe"
-               
-                className='m-2 bg-white h-[450px] shadow-2xl hover:scale-105 ease-in duration-150 p-1'
-                >
-                <h5 className="ml-2 text-2xl font-bold tracking-tight text-black">
-                    <p>
-                    Strony internetowe
-                    </p>
-                </h5>
-                <p className="font-normal text-gray-700 m-2">
-                    <p>
-                    Nowoczesna i responsywna strona internetowa, która pomoże Ci dotrzec do nowych klientów.
-                    </p>
-                </p>
-            </Card>
-            </Fade>
-            <Fade left duration={1500} distance='50%'>
-            <Card
-                imgSrc={Image}
-                imgAlt="Landing page"
-                
-                className='m-2 bg-white shadow-2xl h-[450px] hover:scale-105 ease-in duration-150 p-1'
-                >
-                <h5 className="ml-2 text-2xl font-bold tracking-tight text-black  ">
-                    <p>
-                    Landing page
-                    </p>
-                </h5>
-                <p className="font-normal text-gray-700 m-2">
-                    <p>
-                    To prosta strona, która ma pomóc Ci osiągnąć konkretny cel: sprzedać dany produkt czy usługę, zachęcić do kontaktu, a także pomóc w obranej strategii marketingowej.
-                    </p>
-                </p>
-            </Card>
-            </Fade>
-            <Fade left duration={1500} distance='50%'>
-            <Card
-                imgSrc={Image}
-                imgAlt="Portale Internetowe"
-                
-                className='m-2 bg-white h-[450px] shadow-2xl hover:scale-105 ease-in duration-150 p-1 '
-                >
-                <h5 className="ml-2 text-2xl font-bold tracking-tight text-black ">
-                    <p>
-                    Portale internetowe
-                    </p>
-                </h5>
-                <p className="font-normal text-gray-700 m-2">
-                    <p>
-                    Portal internetowy to znacznie bardziej rozbudowana strona internetowa z większą ilością funkcji. Wykonujemy różnego rodzaju portale (od informacyjnych i tematycznych po ogłoszeniowe i aukcyjne)
-                    </p>
-                </p>
-            </Card>
-            </Fade>
-            <Fade left duration={1500} distance='50%'>
-            <Card
-                imgSrc={Image}
-                imgAlt="Aplikacje internetowe"
-                className='m-2 bg-white h-[450px] shadow-2xl hover:scale-105 ease-in duration-150 p-1'
-                >
-                <h5 className="ml-2 text-2xl font-bold tracking-tight text-black ">
-                    <p>
-                    Aplikacje internetowe
-                    </p>
-                </h5>
-                <p className="font-normal text-gray-700 m-2">
-                    <p>
-                        Aplikacja internetowa to aplikacja uruchamiana w przeglądarce, która przez dostarczony interfejs ma dostarczać użytkownikowi jakąś konkretną usługę. Na przykład (aplikacje bookingowe, konkursowe) czy też systemy ERP
-                    </p>
-                </p>
-            </Card>
-            </Fade>
-        </div>
     </div>
   )
 }

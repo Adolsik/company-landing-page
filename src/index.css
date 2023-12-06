@@ -4,16 +4,21 @@
 
 body {
   background-color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
 }
 li {
   cursor: pointer;
+}
+
+.font-link {
+  font-family: 'Magra', sans-serif;
 }
 
 .navBarHoverLarge{
   @apply  hover:bg-[#87C4FF] transition-all  hover:ease-in-out hover:duration-300
 }
 .navBarHoverOffer{
-  @apply transition-all hover:text-lg
+  @apply ease-in-out duration-150 hover:scale-110
 }
 .navBarHoverSmall {
   @apply hover:bg-[#87C4FF] transition-all  hover:ease-in-out hover:duration-300

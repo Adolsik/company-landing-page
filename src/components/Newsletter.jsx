@@ -10,7 +10,7 @@ const Newsletter = () => {
 
   return (
     <Fade right duration={1000} distance="50%">
-      <div className="bg-[#FFFFFF] py-16 w-full text-black">
+      <div className="bg-[#FFFFFF] py-16 w-full text-black max-h-[450px] lg:max-h-[300px]">
         <div className="max-w-[1240px] mx-auto grid lg:grid-cols-3">
           <div className="lg:col-span-2 my-4">
             <h1 className="md:text-4xl sm:text-3xl text-2xl py-2 font-bold ml-3">
@@ -35,7 +35,7 @@ const Newsletter = () => {
                 Wciskając przycisk zgadzasz się z{" "}
                 <span
                   onClick={showPrivacyPolicy}
-                  className="text-[#39A7FF] font-medium cursor-pointer hover:text-lg hover:transtion hover:ease-linear hover:duration-150"
+                  className="text-[#39A7FF] font-medium hover:text-[#87C4FF] cursor-pointer ease-in-out duration-300"
                 >
                   zasadami polityki prywatności
                 </span>
@@ -43,7 +43,7 @@ const Newsletter = () => {
             </div>
           </div>
         </div>
-        <div className="fixed z-50 top-0 -left-3 lg:top-[10%] lg:left-[30%] ">
+        <div className="fixed z-50 top-0 -left-3 lg:top-[10%] lg:left-[30%]">
               <div
                 id="defaultModal"
                 tabindex="-1"
@@ -54,9 +54,9 @@ const Newsletter = () => {
                 }
               >
                 <div class="relative w-full max-w-2xl max-h-full">
-                  <div class="relative rounded-lg shadow bg-gray-700">
+                  <div class="relative rounded-lg shadow-lg bg-gradient-to-r from-sky-500 to-indigo-300 text-white opacity-95">
                     <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
-                      <h3 class="text-xl font-semibold text-gray-400">
+                      <h3 class="text-xl text-white font-bold">
                         Polityka prywatności
                       </h3>
                       <button
@@ -79,11 +79,11 @@ const Newsletter = () => {
                             d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
                           />
                         </svg>
-                        <span class="sr-only">Close modal</span>
+                        <span class="sr-only"></span>
                       </button>
                     </div>
-                    <div class="p-6 space-y-6">
-                      <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                    <div class="pl-4 pt-2 pr-1 pb-2">
+                      <p class="text-base leading-relaxed text-white font-medium">
                         1. Administratorem Pana/Pani danych osobowych jest
                         (todo) <br />
                         2. Dane będą przetwarzane w celu udzielenia odpowiedzi
@@ -113,7 +113,7 @@ const Newsletter = () => {
                         odpowiedzi.
                         <br /> <br />
                       </p>
-                      <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                      <p class="text-base leading-relaxed text-white font-medium">
                         *Rozporządzenie Parlamentu Europejskiego i Rady (UE)
                         2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony
                         osób fizycznych w związku z przetwarzaniem danych
