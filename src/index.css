@@ -10,15 +10,33 @@ li {
   cursor: pointer;
 }
 
+.dropdown {
+  display: inline;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+}
+
+
+.dropdown:hover .dropdown-content {
+ display: inline-block;
+}
+
+.dropdown:hover .dropdown-li {
+  background-color: #87C4FF;
+}
+
 .font-link {
   font-family: 'Magra', sans-serif;
 }
 
 .navBarHoverLarge{
-  @apply  hover:bg-[#87C4FF] transition-all  hover:ease-in-out hover:duration-300
+  @apply  hover:bg-[#87C4FF] transition-all ease-in-out duration-300
 }
 .navBarHoverOffer{
-  @apply ease-in-out duration-150 hover:scale-110
+  @apply ease-in-out duration-300 hover:scale-110
 }
 .navBarHoverSmall {
   @apply hover:bg-[#87C4FF] transition-all  hover:ease-in-out hover:duration-300
